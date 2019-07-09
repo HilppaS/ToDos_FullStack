@@ -6,7 +6,7 @@
        for( var i=0;i< response.data.length; i++){
            console.dir(response.data[i])
            document.getElementById("ToDo").innerHTML +=
-               "<tr><td>"+response.data[i].tehtava+"</td></tr>";}
+               "<tr><td>"+response.data[i].id + " " +response.data[i].tehtava+"</td></tr>";}
         })
         .catch(function (error) {
             // handle error
@@ -18,19 +18,30 @@
    }
 
    function lisaaTodo() {
+       var lisattava = document.getElementById("lisättävä").value
        axios.post('/api/todo', {
-           tehtava: 'pida tauko...'})
+           tehtava: lisattava})
            .then(function (response) {
                console.log(response);
                for( var i=0;i< response.data.length; i++){
                    console.dir(response.data[i])
                    document.getElementById("ToDo").innerHTML +=
                        "<tr><td>"+response.data[i].tehtava+"</td></tr>";}
-
-
            })
            .catch(function (error) {
                console.log(error);
            });
 
    }
+   function poistaTodo(){
+       var id= document.getElementById("poistettava").value
+       axios.delete('/api/todo/'+id, {
+           id: id})
+           .then(function (response) {
+               console.log(response);
+           })
+           .catch(function (error) {
+               console.log(error);
+           });
+   }
+

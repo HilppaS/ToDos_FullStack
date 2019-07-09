@@ -11,23 +11,22 @@
 <div class="container">
     <h1>TODOT</h1>
     <br>
-    <input onclick="haeTodot()" type="button" value="Hae tehtäviä"/>
+    <input onclick="haeTodot()" type="button" value="Näytä tehtävät"/>
     <br>
+    <input onclick="lisaaTodo()" type="button" value="Lisää tehtävä"/>
+    <input id="lisättävä" type="text" size="10"/>
+    <br>
+    <input onclick="poistaTodo()" type="button" value="Poista tehtävä"/>
+    <input id="poistettava" type="text" size="10"/>
+
 
     <table class="taulukko" id="todot">
         <tr>
-            <br>
-            <br>
-            <th>Tehtävä</th>
-            <br>
-            <br>
-
+            <tbody id="ToDo"></tbody>
         </tr>
-        <tbody id="ToDo"></tbody>
-        <br>
-        <br>
 
-        <input onclick="lisaaTodo()" type="button" value="Lisää tehtävä"/>
+        <br>
+        <br>
 
     </table>
 
