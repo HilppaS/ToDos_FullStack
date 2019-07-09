@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo</title>
+    <link href="Todoulkoasu.css" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="TodoJS.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>TODOT</h1>
+    <br>
+    <input onclick="haeTodot()" type="button" value="Hae tehtäviä"/>
+    <br>
+
+    <table class="taulukko" id="todot">
+        <tr>
+            <br>
+            <br>
+            <th>Tehtävä</th>
+            <br>
+            <br>
+
+        </tr>
+        <tbody id="ToDo"></tbody>
+        <br>
+        <br>
+
+        <input onclick="lisaaTodo()" type="button" value="Lisää tehtävä"/>
+
+    </table>
+
+</div>
+</body>
+</html>
+
