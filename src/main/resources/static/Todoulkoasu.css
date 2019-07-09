@@ -1,10 +1,13 @@
-h1{ font-family: Calibri;
+.ylasivu{background-color: black;
+    margin:0}
+
+h1{ font-family: 'Archivo Black', sans-serif;
     text-align:center;
     padding:50px 0;
     font-size:50px;
     font-weight: bold;
+    color: white;
     margin:0;
-
 }
 h2{font-family: Calibri;
     font-size:18px;
@@ -12,7 +15,6 @@ h2{font-family: Calibri;
     box-sizing:border-box;
     margin:0;
 }
-body{ background-color: white}
 
 th{outline: 2px solid black;
     font-family: Calibri;
@@ -24,3 +26,52 @@ tbody{text-align: center;
     font-family: Calibri;}
 
 input {text-align: center;}
+
+.button1{
+    background-color: orange;
+    font-family: Calibri;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button2{
+    background-color: darkseagreen;
+    font-family: Calibri;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button3{
+    background-color: lightpink;
+    font-family: Calibri;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.lisattava{
+    background-color: white;
+    color: black;
+    border: 2px solid darkseagreen;
+    padding: 15px 32px;
+}
+.poistettava{
+    background-color: white;
+    color: black;
+    border: 2px solid lightpink;
+    padding: 15px 32px;
+}

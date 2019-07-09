@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <title>ToDo</title>
     <link href="Todoulkoasu.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="TodoJS.js"></script>
 </head>
 <body>
-<div class="container">
+
+<div class="ylasivu">
     <h1>TODOT</h1>
-    <br>
-    <input onclick="haeTodot()" type="button" value="Näytä tehtävät"/>
-    <br>
-    <input onclick="lisaaTodo()" type="button" value="Lisää tehtävä"/>
-    <input id="lisättävä" type="text" size="10"/>
-    <br>
-    <input onclick="poistaTodo()" type="button" value="Poista tehtävä"/>
-    <input id="poistettava" type="text" size="10"/>
+</div>
 
+    <input onclick="haeTodot()" class="button1" type="button" value="NÄYTÄ TEHTÄVÄT"/>
+    <input onclick="lisaaTodo()" class="button2" type="button" value="LISÄÄ TEHTÄVÄ"/>
+    <input onclick="poistaTodo()" class="button3" type="button" value="POISTA TEHTÄVÄ"/>
 
+    <br>
+    <input id="lisättävä" class="lisattava" type="text" size="18"/>
+
+    <input id="poistettava" class="poistettava" type="text" size="18"/>
+    <br>
+
+<div class="lista">
     <table class="taulukko" id="todot">
         <tr>
             <tbody id="ToDo"></tbody>
@@ -29,7 +34,6 @@
         <br>
 
     </table>
-
 </div>
 </body>
 </html>
