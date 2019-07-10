@@ -14,27 +14,30 @@
     <h1>TODOT</h1>
 </div>
 
+<br>
+<br>
     <input onclick="haeTodot()" class="button1" type="button" value="NÄYTÄ TEHTÄVÄT"/>
-    <input onclick="lisaaTodo()" class="button2" type="button" value="LISÄÄ TEHTÄVÄ"/>
-    <input onclick="poistaTodo()" class="button3" type="button" value="POISTA TEHTÄVÄ"/>
+<br>
+<br>
 
-    <br>
+<table>
+    <tbody id="ToDo"></tbody>
+    <!--    <input onclick="editTodo()" class="button4" type="button" value="valmis"/> -->
+</table>
+
+
+<br>
+<br>
+    <input onclick="lisaaTodo()" class="button2" type="button" value="LISÄÄ TEHTÄVÄ:"/>
     <input id="lisättävä" class="lisattava" type="text" size="18"/>
-
+<br>
+<br>
+    <input onclick="poistaTodo()" class="button3" type="button" value="POISTA TEHTÄVÄ:"/>
     <input id="poistettava" class="poistettava" type="text" size="18"/>
-    <br>
+<br>
+<br>
+    <input onclick="tyhjennaTaulu()" class="button4" type="button" value="TYHJENNÄ LISTA"/>
 
-<div class="lista">
-    <table class="taulukko" id="todot">
-        <tr>
-            <tbody id="ToDo"></tbody>
-        </tr>
-
-        <br>
-        <br>
-
-    </table>
-</div>
 </body>
 </html>
 

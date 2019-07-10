@@ -22,7 +22,7 @@ public class ToDotKontrolleri {
     @GetMapping("")
     public List<ToDo> listaaTehtavat() {
         List<ToDo> kaikki = dao.naytaKaikki();
-        System.out.printf("Haetaan listaa, alkioita: %d kpl\n", kaikki.size());
+        System.out.printf("Listalla alkioita: %d kpl\n", kaikki.size());
         return kaikki;
     }
     @PostMapping("")
@@ -40,14 +40,7 @@ public class ToDotKontrolleri {
     @DeleteMapping("/{id}")
     public void poista(@PathVariable int id)throws SQLException {
         dao.poista(id);
-
-
-     /*   return ResponseEntity
-                .status(HttpStatus.NOT_FOUND)
-                .body(new Virheviestit(String.format("Id %d ei ole olemassa: ei poistettu", id)));  */
     }
- //   @RequestMapping("api/todo") // url tälle metodille: http://localhost:8080/todo
- //   public String loginMessage(){
- //       return "ToDo";
- //   }
+
+
 }

@@ -3,7 +3,7 @@
 
 h1{ font-family: 'Archivo Black', sans-serif;
     text-align:center;
-    padding:50px 0;
+    padding:60px 10px;
     font-size:50px;
     font-weight: bold;
     color: white;
@@ -16,16 +16,14 @@ h2{font-family: Calibri;
     margin:0;
 }
 
-th{outline: 2px solid black;
+tbody{
     font-family: Calibri;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px}
+    text-align:left;
+    font-size:18px;
+    text-decoration: underline;
+}
 
-tbody{text-align: center;
-    font-family: Calibri;}
-
-input {text-align: center;}
+input{text-align: center;}
 
 .button1{
     background-color: orange;
@@ -63,15 +61,29 @@ input {text-align: center;}
     margin: 4px 2px;
     cursor: pointer;
 }
+.button4{
+    background-color: cadetblue;
+    font-family: Calibri;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 .lisattava{
     background-color: white;
     color: black;
     border: 2px solid darkseagreen;
     padding: 15px 32px;
+    border-radius: 8px;
 }
 .poistettava{
     background-color: white;
     color: black;
     border: 2px solid lightpink;
     padding: 15px 32px;
+    border-radius: 8px;
 }

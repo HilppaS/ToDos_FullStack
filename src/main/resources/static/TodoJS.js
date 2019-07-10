@@ -1,12 +1,13 @@
 
    function haeTodot() {
-    axios.get('/api/todo')   // Get metodi pyytää localhostilta tiedot
+    document.getElementById("ToDo").innerHTML="";
+    axios.get('/api/todo')   // Get metodi pyytää tiedot
    .then(function (response) {   // toiminta sen jälkeen, kun tiedot haettu
-        console.log(response.data);
+       console.log(response.data);
        for( var i=0;i< response.data.length; i++){
            console.dir(response.data[i])
            document.getElementById("ToDo").innerHTML +=
-               "<tr><td>"+response.data[i].id + " " +response.data[i].tehtava+"</td></tr>";}
+               "<tr><td>"+response.data[i].id + ".  " + response.data[i].tehtava+ "</td></tr>";}
         })
         .catch(function (error) {
             // handle error
@@ -23,6 +24,24 @@
            tehtava: lisattava})
            .then(function (response) {
                console.log(response);
+           //    for( var i=0;i< response.data.length; i++){
+           //        console.dir(response.data[i])
+            //       document.getElementById("ToDo").innerHTML +=
+            //           "<tr><td>"+response.data[i].tehtava+"</td></tr>";}
+          })
+           .catch(function (error) {
+               console.log(error);
+           })
+
+
+   }
+/*   function editTodo() {
+       var muokattava = document.getElementById("lisättävä").value
+       var id= document.getElementById("valmis").value
+       axios.put('/api/todo'+id, {
+           id: id})
+           .then(function (response) {
+               console.log(response);
                for( var i=0;i< response.data.length; i++){
                    console.dir(response.data[i])
                    document.getElementById("ToDo").innerHTML +=
@@ -32,7 +51,7 @@
                console.log(error);
            });
 
-   }
+   }  */
    function poistaTodo(){
        var id= document.getElementById("poistettava").value
        axios.delete('/api/todo/'+id, {
