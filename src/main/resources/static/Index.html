@@ -4,39 +4,30 @@
     <meta charset="UTF-8">
     <title>ToDo</title>
     <link href="Todoulkoasu.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="TodoJS.js"></script>
 </head>
 <body>
 
-<div class="ylasivu">
-    <h1>TODOT</h1>
-</div>
+<header>
+    <h1>TO DO LIST:</h1>
+</header>
 
-<br>
-<br>
-    <input onclick="haeTodot()" class="button1" type="button" value="NÄYTÄ TEHTÄVÄT"/>
-<br>
-<br>
-
-<table>
-    <tbody id="ToDo"></tbody>
-    <!--    <input onclick="editTodo()" class="button4" type="button" value="valmis"/> -->
-</table>
-
-
-<br>
-<br>
+    <table>
+        <tbody id="ToDo"></tbody>
+    </table>
+    <div class="lisäys"><p> Lisää tehtävä syöttämällä tehtävän nimi kenttään:</p></div>
     <input onclick="lisaaTodo()" class="button2" type="button" value="LISÄÄ TEHTÄVÄ:"/>
-    <input id="lisättävä" class="lisattava" type="text" onfocus="this.value=''" size="18"/>
-<br>
-<br>
+    <input id="lisättävä" class="lisattava" type="text" onfocus="this.value=''" size="16"/>
+    <br>
+        <div class="poisto"><p> Poista tehtävä syöttämällä tehtävän numero kenttään:</p></div>
     <input onclick="poistaTodo()" class="button3" type="button" value="POISTA TEHTÄVÄ:"/>
-    <input id="poistettava" class="poistettava" type="text" onfocus="this.value=''" size="18"/>
-<br>
-<br>
+    <input id="poistettava" class="poistettava" type="text" onfocus="this.value=''" size="16"/>
+    <br>
+    <input onclick="haeTodot()" class="button1" type="button" value="NÄYTÄ TEHTÄVÄT"/>
     <input onclick="tyhjennaTaulu()" class="button4" type="button" value="TYHJENNÄ LISTA"/>
+
 
 </body>
 </html>

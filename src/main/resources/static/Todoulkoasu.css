@@ -1,7 +1,8 @@
-.ylasivu{background-color: black;
-    margin:0}
 
-h1{ font-family: 'Archivo Black', sans-serif;
+header{background-color: black;
+    }
+
+h1{ font-family: 'Permanent Marker', cursive;
     text-align:center;
     padding:60px 10px;
     font-size:50px;
@@ -9,18 +10,21 @@ h1{ font-family: 'Archivo Black', sans-serif;
     color: white;
     margin:0;
 }
-h2{font-family: Calibri;
+.lisäys p{font-family: 'Permanent Marker', cursive;
     font-size:18px;
-    line-height:18px;
-    box-sizing:border-box;
-    margin:0;
+    color: darkseagreen ;
 }
-
-tbody{
-    font-family: Calibri;
-    text-align:left;
+.poisto p{font-family: 'Permanent Marker', cursive;
     font-size:18px;
+    color: lightpink;
+}
+tbody{
+    font-family: 'Permanent Marker', cursive;
+    margin-left: 300px;
+    text-align:left;
+    font-size:22px;
     text-decoration: underline;
+    padding: 20px;
 }
 
 input{text-align: center;}
@@ -29,7 +33,7 @@ input{text-align: center;}
     background-color: orange;
     font-family: Calibri;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 30px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
@@ -41,7 +45,7 @@ input{text-align: center;}
     background-color: darkseagreen;
     font-family: Calibri;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 30px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
@@ -53,7 +57,7 @@ input{text-align: center;}
     background-color: lightpink;
     font-family: Calibri;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 30px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
@@ -65,7 +69,7 @@ input{text-align: center;}
     background-color: cadetblue;
     font-family: Calibri;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 30px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
@@ -77,13 +81,18 @@ input{text-align: center;}
     background-color: white;
     color: black;
     border: 2px solid darkseagreen;
-    padding: 15px 32px;
+    padding: 15px 30px;
     border-radius: 8px;
 }
 .poistettava{
     background-color: white;
     color: black;
     border: 2px solid lightpink;
-    padding: 15px 32px;
+    padding: 15px 30px;
     border-radius: 8px;
+}
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
