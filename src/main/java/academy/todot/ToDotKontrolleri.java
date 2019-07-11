@@ -41,6 +41,9 @@ public class ToDotKontrolleri {
     public void poista(@PathVariable int id)throws SQLException {
         dao.poista(id);
     }
-
+    @DeleteMapping("")
+    public void tyhjennaLista() throws SQLException {
+        dao.tyhjennaLista();
+    }
 
 }

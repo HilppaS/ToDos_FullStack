@@ -52,4 +52,9 @@ public class ToDoDaoJdbc implements TodoDao{
         paivitaDB.setInt(1,id);
         paivitaDB.executeUpdate();
     }
+    @Override
+    public void tyhjennaLista() throws SQLException {
+        PreparedStatement tyhjennaDB = yhteys.prepareStatement("DELETE FROM taskit");
+        tyhjennaDB.executeUpdate();
+    }
 }

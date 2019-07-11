@@ -8,5 +8,6 @@ public class SpringBootTodotApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringBootTodotApplication.class, args);
+
     }
 }

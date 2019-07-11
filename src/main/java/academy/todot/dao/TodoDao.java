@@ -9,5 +9,5 @@ public interface TodoDao {
     List<ToDo> naytaKaikki();
     int lisaa(ToDo tehtava) throws SQLException;
     void poista(int id)throws SQLException;
-
+    void tyhjennaLista() throws SQLException;
 }

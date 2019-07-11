@@ -35,27 +35,23 @@
 
 
    }
-/*   function editTodo() {
-       var muokattava = document.getElementById("lisättävä").value
-       var id= document.getElementById("valmis").value
-       axios.put('/api/todo'+id, {
-           id: id})
-           .then(function (response) {
-               console.log(response);
-               for( var i=0;i< response.data.length; i++){
-                   console.dir(response.data[i])
-                   document.getElementById("ToDo").innerHTML +=
-                       "<tr><td>"+response.data[i].tehtava+"</td></tr>";}
-           })
-           .catch(function (error) {
-               console.log(error);
-           });
 
-   }  */
    function poistaTodo(){
        var id= document.getElementById("poistettava").value
        axios.delete('/api/todo/'+id, {
            id: id})
+           .then(function (response) {
+               console.log(response);
+               document.getElementById("poistettava").innerHTML="";
+           })
+           .catch(function (error) {
+               console.log(error);
+           });
+   }
+
+   function tyhjennaTaulu(){
+       document.getElementById("ToDo").innerHTML="";
+       axios.delete('/api/todo/')
            .then(function (response) {
                console.log(response);
            })
